@@ -1,6 +1,8 @@
 variables:
   - name: project_name
     default_value: my-project
+  - name: package_name
+    default_value: "{{ to_snake_case project_name }}"
 
 ignores:
   - .git # exclude .git of the template host
